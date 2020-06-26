@@ -35,17 +35,20 @@ class ViewController: UIViewController {
     @IBAction func onNumberClicked(_ sender: UIButton) {
         guard let text = sender.currentTitle else { return }
         
-        if displayString == "0" {
-            if text == "0"  {
-                return
-            } else if text == "." {
-                shouldReset = false
-                displayString.append(text)
-                displayLabel.text = displayString
-                
-                return
-            }
+        if  (text == "0" && displayString == "0") ||
+            (text == "." && displayString.contains("."))
+        {
+            return
         }
+        
+        if text == "." && displayString == "0" {
+            shouldReset = false
+            displayString.append(text)
+            displayLabel.text = displayString
+                
+            return
+        }
+
         
         if (shouldReset) {
             displayString = text

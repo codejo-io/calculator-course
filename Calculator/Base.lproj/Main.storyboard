@@ -36,6 +36,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onClearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pV-Zg-srk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RL-nI-MVz" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="103.5"/>
@@ -52,6 +55,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onClearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNf-u9-J3C"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBG-JD-6cZ" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="103.5"/>
@@ -84,6 +90,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onOperatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzu-iu-ral"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -105,6 +114,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXe-sA-nGM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qX-vW-WWl" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="103.5"/>
@@ -121,6 +133,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1a-Lg-CnT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPf-mJ-7rH" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="103.5"/>
@@ -137,6 +152,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7OK-wy-cb8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V93-DX-I2Q" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>
@@ -153,6 +171,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onOperatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jk-XJ-J09"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -174,6 +195,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwJ-4r-eqs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTS-6z-Xfv" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="103.5"/>
@@ -190,6 +214,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7s-cg-J33"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF3-62-rjg" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="103.5"/>
@@ -206,6 +233,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2FE-K4-Xvx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52d-5z-RCW" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>
@@ -222,6 +252,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onOperatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ld-FY-aM2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -243,6 +276,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wye-LT-qh1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Di6-EY-zza" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="103.5"/>
@@ -259,6 +295,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYR-5q-Aq5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-MW-YXA" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="103.5"/>
@@ -275,6 +314,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JM-Qk-AT1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAL-LH-E0g" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>
@@ -291,6 +333,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onOperatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4RO-3b-Peb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -312,6 +357,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3s-uF-E7I"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vg-Gz-ihW" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="103.5"/>
@@ -333,7 +381,7 @@
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                <state key="normal" title="+">
+                                                <state key="normal" title="=">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -344,6 +392,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onOperatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KR-fZ-IGf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -375,6 +426,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="bAL-LH-E0g" id="w4D-Ca-hyH"/>
+                        <outlet property="displayLabel" destination="saH-b9-4xu" id="1eV-RN-cAK"/>
+                        <outlet property="divideButton" destination="z4g-TR-X2x" id="ioa-gn-4nG"/>
+                        <outlet property="equalButton" destination="kqK-pJ-MjV" id="g8a-hH-xeM"/>
+                        <outlet property="multiplicationButton" destination="V93-DX-I2Q" id="f8d-yt-yoR"/>
+                        <outlet property="subtractButton" destination="52d-5z-RCW" id="Uw2-kv-qbH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

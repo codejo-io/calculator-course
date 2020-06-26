@@ -74,6 +74,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSignClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tVs-hq-8E5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4g-TR-X2x" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>
@@ -376,6 +379,9 @@
                                                         <real key="value" value="0.25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onNumberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KW0-hF-z4K"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqK-pJ-MjV" customClass="BorderedButton" customModule="Calculator" customModuleProvider="target">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="103.5"/>

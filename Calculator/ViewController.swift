@@ -35,8 +35,16 @@ class ViewController: UIViewController {
     @IBAction func onNumberClicked(_ sender: UIButton) {
         guard let text = sender.currentTitle else { return }
         
-        if text == "0" && displayString == "0" {
-            return
+        if displayString == "0" {
+            if text == "0"  {
+                return
+            } else if text == "." {
+                shouldReset = false
+                displayString.append(text)
+                displayLabel.text = displayString
+                
+                return
+            }
         }
         
         if (shouldReset) {
@@ -49,6 +57,19 @@ class ViewController: UIViewController {
         displayLabel.text = displayString
     }
     
+    @IBAction func onSignClicked(_ sender: UIButton) {
+        if displayString == "0" {
+            return
+        }
+        
+        if displayString.hasPrefix("-") {
+            displayString.removeFirst()
+        } else {
+            displayString.insert("-", at: displayString.startIndex)
+        }
+        
+        displayLabel.text = displayString
+    }
     
     @IBAction func onClearClicked(_ sender: UIButton) {
         guard let text = sender.currentTitle else { return }
@@ -90,6 +111,10 @@ class ViewController: UIViewController {
             displayString = "\(value * savedValue)"
         } else if divideButton.backgroundColor == onColor {
             displayString = "\(savedValue / value)"
+        }
+        
+        if displayString.hasSuffix(".0") {
+            displayString.removeLast(2)
         }
         
         displayLabel.text = displayString

@@ -23,8 +23,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
 
     var savedValue: Double = 0.0
-    var shouldReset = true
     var displayString = "0"
+    
+    var shouldProcess = false
+    var shouldReset = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,8 @@ class ViewController: UIViewController {
 
     @IBAction func onNumberClicked(_ sender: UIButton) {
         guard let text = sender.currentTitle else { return }
+        
+        shouldProcess = true
         
         if  (text == "0" && displayString == "0") ||
             (text == "." && displayString.contains("."))
@@ -91,31 +95,41 @@ class ViewController: UIViewController {
     
     @IBAction func onOperatorClicked(_ sender: UIButton) {
         
-        shouldReset = true
+        if shouldProcess == false {
+            resetOperatorColors()
+            sender.backgroundColor = onColor
+            return
+        }
         
         if sender == equalButton {
             processOperation()
             resetOperatorColors()
-        } else if let value = Double(displayString) {
-            savedValue = value
+        } else {
+            processOperation()
             resetOperatorColors()
             sender.backgroundColor = onColor
         }
+        
+        shouldProcess = false
+        shouldReset = true
     }
     
     func processOperation() {
         guard let value = Double(displayString) else { return }
         
         if addButton.backgroundColor == onColor {
-            displayString = "\(value + savedValue)"
+            savedValue = value + savedValue
         } else if subtractButton.backgroundColor == onColor {
-            displayString = "\(savedValue - value)"
+            savedValue = savedValue - value
         } else if multiplicationButton.backgroundColor == onColor {
-            displayString = "\(value * savedValue)"
+            savedValue = value * savedValue
         } else if divideButton.backgroundColor == onColor {
-            displayString = "\(savedValue / value)"
+            savedValue = savedValue / value
+        } else {
+            savedValue = value
         }
         
+        displayString = "\(savedValue)"
         if displayString.hasSuffix(".0") {
             displayString.removeLast(2)
         }
